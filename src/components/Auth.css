@@ -1,0 +1,167 @@
+/* Auth Container Styles */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.auth-form {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+}
+
+.auth-form:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Styles */
+.auth-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-logo img {
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.auth-logo h2 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Form Styles */
+.auth-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth-form .form-label {
+  color: #2c3e50;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.auth-form .form-control {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #dfe6e9;
+  transition: all 0.3s;
+}
+
+.auth-form .form-control:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 0.2rem rgba(76, 175, 80, 0.25);
+}
+
+/* Button Styles */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  background-color: #4CAF50;
+  border: none;
+}
+
+.auth-btn:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+}
+
+.auth-btn:disabled {
+  background-color: #95a5a6;
+}
+
+/* Link Styles */
+.auth-link-container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.auth-link {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.auth-link:hover {
+  color: #3e8e41;
+  text-decoration: underline;
+}
+
+/* Alert Styles */
+.auth-alert {
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Tab Styles (for login with multiple methods) */
+.auth-tabs .nav-link {
+  color: #7f8c8d;
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  transition: all 0.3s;
+}
+
+.auth-tabs .nav-link.active {
+  color: #4CAF50;
+  background: transparent;
+  border-bottom: 3px solid #4CAF50;
+}
+
+/* Recaptcha Container */
+#recaptcha-container {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Spinner Styles */
+.auth-spinner {
+  margin-right: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .auth-container {
+    padding: 1rem;
+    background: #ffffff;
+  }
+  
+  .auth-form {
+    padding: 1.5rem;
+    box-shadow: none;
+  }
+
+  .auth-form:hover {
+    box-shadow: none;
+  }
+}
+
+/* Animation for form elements */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.auth-form > * {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.auth-form > *:nth-child(1) { animation-delay: 0.1s; }
+.auth-form > *:nth-child(2) { animation-delay: 0.2s; }
+.auth-form > *:nth-child(3) { animation-delay: 0.3s; }
+/* Add more nth-child rules as needed for your form elements */
